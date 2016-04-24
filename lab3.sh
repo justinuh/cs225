@@ -3,7 +3,7 @@
 
 if [[ $EUID -eq 0 ]] ;then 
 	echo "Then it is insecure to run script as root"
-	Exit 1
+	exit 1
 fi 
 
 if [[ -r /etc/passwd ]] ;then
