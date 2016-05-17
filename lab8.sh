@@ -26,6 +26,9 @@ LINE=${LINE#*,}
 STATE=${LINE%%,*}
 LINE=${LINE#*,}
 
+STATEPOSTALCODE=${LINE%%,*}
+LINE=${LINE#*,}
+
 ZIP=${LINE%%,*}
 LINE=${LINE#*,}
 
@@ -41,4 +44,5 @@ LINE=${LINE#*,}
 WEBURL=${LINE%%,*}
 LINE=${LINE#*,} 
 
-echo "Testing: $FNAME $LNAME lives in $STATE"
+echo "Testing: $FNAME $LNAME lives in $STATE and works at $COMPANY. His email is $EMAIL. He currently lives on $STREET $CITY $STATE $ZIP."
+

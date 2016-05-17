@@ -8,4 +8,12 @@ if [[ $NUMBER =~ ^[0-9]+$ ]] && (( $NUMBER >= 50 )) && (( $NUMBER <= 100 )) ;the
 else
 	echo "You are wrong try again"
 fi  
-	
+
+
+
+
+
+
+
+
+
